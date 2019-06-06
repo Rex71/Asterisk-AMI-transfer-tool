@@ -1,13 +1,15 @@
 # Asterisk-AMI-transfer-tool
 
-This tool is for testin gthe AMI transfer 
+This tool is for testing the AMI transfer functionality 
+
+
 How To Install
 
 Install expect
 
 sudo apt-get install expext
 
-Extract files forms.sh, repat.sh, xfer.expect, to local dir
+Extract files forms.sh, repeat.sh, xfer.expect, to local dir
 
 cd local dir
 
