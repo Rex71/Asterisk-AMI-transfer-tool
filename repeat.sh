@@ -23,13 +23,13 @@ echo 1st: $?  >> status.log
 
 zenity --question \
 --title="Transfer call" \
---text "Click The Transfer Button" \
+--text "Context:$6 Extn:$7" \
 --ok-label="Cancel" \
 --cancel-label="Transfer"
 case $? in
         1) ./xfer.expect $aamidata ;;
 	0) exit ;;
-       -1) echo "Ewrror" ;;
+       -1) echo "Error500" ;;
     esac
 done
 
