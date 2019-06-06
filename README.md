@@ -1,6 +1,6 @@
 # Asterisk-AMI-transfer-tool
 
-This tool is for testing Asterisk AMI transfer functionality on Debian, Ubuntu, Linux desktop enviroments 
+This is a simple GUI tool for testing Asterisk AMI transfer functionality on Debian, Ubuntu, Linux desktop enviroments. 
 
 
 How To Install
@@ -25,4 +25,4 @@ Launch ./forms.sh and complete the AMI paramaters required for the transfer.
 
 Make a call and click transfer 
 
-complete
+
