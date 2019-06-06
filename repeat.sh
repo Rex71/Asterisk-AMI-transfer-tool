@@ -19,8 +19,6 @@ echo $6 >> status.log
 echo $7 >> status.log
 echo $? is at the moment  >> status.log
 echo ----repeat end--- >> status.log
-echo 1st: $?  >> status.log
-
 zenity --question \
 --title="Transfer call" \
 --text "Context:$6 Extn:$7" \
@@ -32,8 +30,6 @@ case $? in
        -1) echo "Error500" ;;
     esac
 done
-
-echo Value is $?  >> status.log
 
 exit 0
 
