@@ -7,9 +7,9 @@ How To Install
 
 Install expect
 
-sudo apt-get install expext
+sudo apt-get install expect
 
-download zip anbd extract files forms.sh, repeat.sh, xfer.expect, to ~/xfr
+download zip and extract files ~ forms.sh, repeat.sh, xfer.expect to Dir ~/xfr
 
 cd ~/xfr
 
