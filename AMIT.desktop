@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Name=AMITU
+Exec=/home/rex/xfer/forms.sh
+Icon=/home/rex/xfer/voip.png
+
+
