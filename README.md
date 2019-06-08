@@ -20,7 +20,7 @@ sudo unzip ~/Downloads/Asterisk-AMI-transfer-tool-master.zip -d ~/xfr
 
 sudo mv Asterisk-AMI-transfer-tool-master/* ~/xfr
 
-sudo rm -rf Asterisk-AMI-transfer-tool-master/* ~/xfr
+sudo rm -rf Asterisk-AMI-transfer-tool-master/*
 
 (Make executable)
 
@@ -54,7 +54,7 @@ To run without Terminal and with Desktop Icon:
 
 Copy the AMIT.desktop file to your desktop
 
-(Use text editor and edit the {$HOME} parameters in the file, setting it to your current installed $HOME e.g. /HOME/$USER/xfr.
+(Use text editor and edit the {$HOME} parameters in the file, setting it to your current installed $HOME e.g. /HOME/USER/xfr.
 
 (Do echo $HOME on your terminal to find your setting)
 
