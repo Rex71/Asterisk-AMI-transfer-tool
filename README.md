@@ -60,9 +60,7 @@ Copy the AMIT.desktop file to your desktop
 
 (Set Permissions and make executable)
 
-sudo chmod +777 ~/Desktop/AMIT.desktop
-
-sudo chmod u+x ~/Desktop/AMIT.desktop
+sudo chmod +777 ~/Desktop/AMIT.desktop&&sudo chmod u+x ~/Desktop/AMIT.desktop
 
 You can now click on the icon to start AMITU.
 
