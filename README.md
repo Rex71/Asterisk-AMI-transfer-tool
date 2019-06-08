@@ -17,7 +17,9 @@ sudo apt-get install expect
 (Download Asterisk-AMI-transfer-tool zip file from here and extract files ~ forms.sh, repeat.sh, xfer.expect to Dir ~/xfr.)
 
 sudo unzip ~/Downloads/Asterisk-AMI-transfer-tool-master.zip -d ~/xfr
+
 sudo mv Asterisk-AMI-transfer-tool-master/* ~/xfr
+
 sudo rm -rf Asterisk-AMI-transfer-tool-master/* ~/xfr
 
 (Make executable)
@@ -51,11 +53,15 @@ The Application will send commands to Asterisk AMI to trasnfer the call.
 To run without Terminal and with Desktop Icon:
 
 Copy the AMIT.desktop file to your desktop
+
 (Use text editor and edit the {$HOME} parameters in the file, setting it to your current installed $HOME e.g. /HOME/$USER/xfr.
-Do "echo $HOME" to find your setting)
+
+(Do echo $HOME on your terminal to find your setting)
 
 (Set Permissions and make executable)
+
 sudo chmod +777 ~/Desktop/AMIT.desktop
+
 sudo chmod u+x ~/Desktop/AMIT.desktop
 
 You can now click on the icon to start AMITU.
