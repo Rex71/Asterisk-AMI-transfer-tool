@@ -3,7 +3,7 @@
 
 TIME=$(date '+%F_%H:%M:%S');
 echo ___ $TIME ____ >> status.log
-echo inputvav: $amidata >> status.log
+echo log start >> status.log
 echo ------- >> status.log
 
 amidata=$(zenity --forms --title="AMI Tester" --text="AMI Parameters" --separator " "\
@@ -21,5 +21,7 @@ amidata=$(zenity --forms --title="AMI Tester" --text="AMI Parameters" --separato
     esac
 done
 echo expect executed : $amidata >> status.log
+
+echo ------- >> status.log
 
 exit 0
