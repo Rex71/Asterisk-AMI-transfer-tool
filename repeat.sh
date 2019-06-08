@@ -8,7 +8,7 @@ extn=$5
 context=$6
 toextn=$7
 aamidata=$@
-echo __repeat start_____
+echo __repeat start_____ >> status.log
 echo inputvav: $aamidata >> status.log
 echo $1 >> status.log 
 echo $2 >> status.log
