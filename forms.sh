@@ -1,7 +1,8 @@
 #!/bin/bash
 # 
 
-echo _______
+TIME=$(date '+%F_%H:%M:%S');
+echo ___ $TIME ____ >> status.log
 echo inputvav: $amidata >> status.log
 echo ------- >> status.log
 
@@ -10,7 +11,6 @@ amidata=$(zenity --forms --title="AMI Tester" --text="AMI Parameters" --separato
    --add-entry="Host Port" \
    --add-entry="Username" \
    --add-password="Password" \
-   --add-entry="Agent Extn" \
    --add-entry="Context" \
    --add-entry="Xfr Etxn")
 
