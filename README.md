@@ -44,9 +44,9 @@ sudo chmod +777 forms.sh repeat.sh xfer.expect status.log
 
 example: ./repeat.sh 192.168.0.50 5038 admin easypass 5000 reception 1000
 
-The user will receive call answer and click transfer, the call will be transfered to extension<1000--example> everytime they click transfer on a new call.)
+The agent will receive a call, answer, speak and when ready click transfer, the call will be transfered to extension<1000--reception>)
 
-The Application will send commands to Asterisk AMI to trasnfer the call.
+The Application will send commands to Asterisk AMI to transfer the call.
 
                           ***********************************************************************
 
