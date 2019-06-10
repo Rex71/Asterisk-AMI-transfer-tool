@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Name=AMITU
+Exec=/home/${user}/xfer/main.sh
+Icon=/home/${user}/xfer/voip.png
+
+

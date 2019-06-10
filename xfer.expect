@@ -1,0 +1,51 @@
+#!/usr/bin/expect -f
+log_user 0
+set timeout 6
+global env
+set path $env(HOME)
+set hostname [lindex $argv 0]
+set port [lindex $argv 1]
+set user [lindex $argv 2]
+set password [lindex $argv 3]
+set extn [lindex $argv 4]
+set context [lindex $argv 5]
+set toextn [lindex $argv 6]
+set amidata [lrange $argv 0 end]
+
+#This spawns the telnet program and connects it to the variable hostname
+spawn telnet $hostname $port
+
+#Login to asterisk AMI
+send "Action: Login\n"
+send "ActionID: 1000\n"
+send "Username: $user\n"
+send "Secret: $password\n"
+send "\n"
+
+sleep 1
+#Show active channels
+send "Action: CoreShowChannels\n"
+send "ActionID: 2000\n"
+send "\n"
+
+sleep 1
+#Grab channel for extension and set var
+expect { 
+-re "Channel: SIP/$extn-(........)" {set channel $expect_out(0,string)}
+}
+
+#Do Blind transfer
+send "Action: BlindTransfer\n"
+send "$channel\n"
+send "Context: $context\n"	
+send "Exten: $toextn\n"
+send "\n"
+
+#The script sends logout
+send "Action: Logoff\n"
+send "ActionID: 60001\n"
+send "\n"
+send "\n"
+sleep 1
+
+eval exec ./repeat.sh {*}$amidata
