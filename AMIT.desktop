@@ -2,7 +2,7 @@
 Type=Application
 Terminal=false
 Name=AMITU
-Exec=/home/${user}/xfer/main.sh
-Icon=/home/${user}/xfer/voip.png
+Exec=/home/$USER/xfer/main.sh
+Icon=/home/$USER/xfer/voip.png
 
 
