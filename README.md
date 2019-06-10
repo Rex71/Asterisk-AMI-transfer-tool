@@ -24,7 +24,7 @@ sudo rm -rf Asterisk-AMI-transfer-tool-master/*
 
 (Make executable)
 
-sudo chmod u+x forms.sh repeat.sh xfer.expect
+sudo chmod u+x *.sh *.expect *.desktop
 
 (Create log file)
 
@@ -32,17 +32,19 @@ touch status.log
 
 (Set permissions)
 
-sudo chmod +777 forms.sh repeat.sh xfer.expect status.log
+sudo chmod +777 *
 
 (Launch forms.sh and complete the AMI parameters required for the transfer.)
 
-./forms.sh
+./debug_forms.sh
 
 (You can also pass arguments directly to repeat.sh, the format is:
 
-./repeat.sh hostip hostport user password exten(agent exten) context(this is the transfer context) to-exten(other party number)
+./debug_repeat.sh hostip hostport user password exten(agent exten) context(this is the transfer context) to-exten(other party number)
 
 example: ./repeat.sh 192.168.0.50 5038 admin easypass 5000 reception 1000
+
+For debug : tail -f status.log 
 
 The agent will receive a call, answer, speak and when ready click transfer, the call will be transfered to extension<1000--reception>)
 
@@ -50,11 +52,11 @@ The Application will send commands to Asterisk AMI to transfer the call.
 
                           ***********************************************************************
 
-To run without Terminal and with Desktop Icon:
+To run without Terminal and with Desktop Icon and Menu Options:
 
 Copy the AMIT.desktop file to your desktop
 
-(Use text editor and edit the {$HOME} parameters in the file, setting it to your current installed $HOME e.g. /HOME/USER/xfr.
+(Use text editor and edit the Exec=/home/${user} parameters in the file, setting it to your current installed $HOME e.g. /home/peter/xfr.
 
 (Do echo $HOME on your terminal to find your setting)
 
