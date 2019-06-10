@@ -2,7 +2,12 @@
 Type=Application
 Terminal=false
 Name=AMITU
+Hidden=false
+NoDisplay=false
+Path=/home/$USER/xfer/
 Exec=/home/$USER/xfer/main.sh
 Icon=/home/$USER/xfer/voip.png
-
-
+GenericName[en_ZA]=Asterisk AMI Transfer Tool
+Comment[en_ZA]=Version -dev-00012
+StartupNotify=true
+X-KeepTerminal=true
