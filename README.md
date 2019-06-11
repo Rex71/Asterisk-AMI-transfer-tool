@@ -15,6 +15,7 @@ cd ~/xfr
 sudo apt-get install expect
 
 (Download Asterisk-AMI-transfer-tool zip file from here and extract files to Dir ~/xfr.)
+
 wget https://github.com/Rex71/Asterisk-AMI-transfer-tool/archive/master.zip
 
 sudo unzip master.zip -d ~/xfer
