@@ -30,10 +30,6 @@ sudo rm -rf master.zip
 
 sudo chmod u+x *.sh *.expect *.desktop
 
-(Create log file)
-
-touch status.log
-
 (Set permissions)
 
 sudo chmod +777 *
